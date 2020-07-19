@@ -2,5 +2,6 @@
 background_opacity: 0.75 
 
 font:
-    family: Code New Roman
-    size: 10
+    normal:
+        family: Noto Mono
+    size: 9.5
