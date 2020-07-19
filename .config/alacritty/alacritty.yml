@@ -3,5 +3,5 @@ background_opacity: 0.75
 
 font:
     normal:
-        family: Noto Mono
+        family: JetBrains Mono
     size: 9.5
