@@ -1,4 +1,4 @@
-" Hybrid line nuymbers
+" Hybrid line numbers
 set number relativenumber
 
 " Tab stuff

@@ -1,2 +1,6 @@
 # Background opacity
-background_opacity: 0.7 
+background_opacity: 0.75 
+
+font:
+    family: Code New Roman
+    size: 10
