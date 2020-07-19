@@ -202,13 +202,11 @@ exec --no-startup-id blueman-manager
 exec --no-startup-id workstuff
 exec --no-startup-id quiterss
 exec --no-startup-id bluemail
-
-# Choose wallpaper
-exec feh --randomize --bg-fill ~/.wallpapers/*
+exec --no-startup-id randwall
 
 # Gaps
 gaps outer 2
-gaps inner 3
+gaps inner 4
 
 # Border pixels
 for_window [class="Alacritty"] border pixel 1
