@@ -200,7 +200,6 @@ exec --no-startup-id compton
 exec --no-startup-id volumeicon
 exec --no-startup-id blueman-manager
 exec --no-startup-id workstuff
-exec --no-startup-id quiterss
 exec --no-startup-id bluemail
 exec --no-startup-id randwall
 
