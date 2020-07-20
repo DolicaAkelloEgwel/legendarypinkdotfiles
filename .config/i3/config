@@ -205,17 +205,17 @@ exec --no-startup-id bluemail
 exec --no-startup-id randwall
 
 # Gaps
-gaps outer 2
+gaps outer 1
 gaps inner 4
 
 # Border pixels
-for_window [class="Alacritty"] border pixel 1
+for_window [class="Alacritty"] border pixel 4
 for_window [class="jetbrains-clion"] border pixel 0
-for_window [class="libreoffice"] border pixel 1
+for_window [class="libreoffice"] border pixel 0
 for_window [class="Chromium"] border pixel 0
-for_window [class="MuPDF"] border pixel 1
-for_window [class="Zathura-swallow"] border pixel 1
-for_window [class="Vivaldi-stable"] border pixel 1
+for_window [class="MuPDF"] border pixel 0
+for_window [class="Zathura-swallow"] border pixel 0
+for_window [class="Vivaldi-stable"] border pixel 0
 for_window [class="Slack"] border pixel 0 
 
 # Make the Nexus Constructor float automatically
