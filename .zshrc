@@ -8,7 +8,7 @@ export ZSH="/home/dolica/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="murilasso"
+ZSH_THEME="spaceship"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -125,3 +125,5 @@ alias cr='/home/dolica/nexus-constructor/venv/bin/python3.7 -m pytest . -s --ign
 # Daily upgrade 
 alias wdu='wajig dailyupgrade'
 
+SPACESHIP_PROMPT_ADD_NEWLINE=false
+SPACESHIP_CHAR_PREFIX="%F{blue}[%F{magenta}$USER%F{red}@%F{green}$HOST%F{blue}] "
