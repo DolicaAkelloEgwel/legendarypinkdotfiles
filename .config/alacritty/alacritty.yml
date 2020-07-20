@@ -3,5 +3,6 @@ background_opacity: 0.75
 
 font:
     normal:
-        family: JetBrains Mono
-    size: 9.5
+        family:	JetBrains Mono for Powerline
+        style: Regular
+    size: 10.5
