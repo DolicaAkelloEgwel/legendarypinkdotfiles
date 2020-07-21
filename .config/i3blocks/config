@@ -42,8 +42,15 @@ signal=10
 color=#d70a53
 
 
-[time]
-label=
-command=date '+%a %d-%m-%y •%l:%M:%S %p'
+[date]
+label=
+command=date '+%A %d·%m·%Y'
 interval=5
 color=#50C878
+
+[time]
+label=
+command=date '+%I:%M:%S %p'
+interval=1
+color=#50C878
+

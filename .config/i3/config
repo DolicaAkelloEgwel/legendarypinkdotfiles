@@ -219,10 +219,10 @@ exec --no-startup-id randwall
 
 # Gaps
 gaps outer 1
-gaps inner 4
+gaps inner 6
 
 # Border pixels
-for_window [class="Alacritty"] border pixel 4
+for_window [class="Alacritty"] border pixel 2
 for_window [class="jetbrains-clion"] border pixel 0
 for_window [class="libreoffice"] border pixel 0
 for_window [class="Chromium"] border pixel 0
