@@ -227,9 +227,9 @@ for_window [class="jetbrains-clion"] border pixel 0
 for_window [class="libreoffice"] border pixel 0
 for_window [class="Chromium"] border pixel 0
 for_window [class="MuPDF"] border pixel 0
-for_window [class="Zathura-swallow"] border pixel 0
+for_window [class="Zathura-swallow"] border pixel 2
 for_window [class="Vivaldi-stable"] border pixel 0
-for_window [class="Slack"] border pixel 0 
+for_window [class="Slack"] border pixel 2 
 
 # Make the Nexus Constructor float automatically
 for_window [class="nexus-constructor.py"] floating enable 
