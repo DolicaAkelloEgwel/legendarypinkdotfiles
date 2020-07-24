@@ -41,6 +41,8 @@ Plug 'psf/black'
 Plug 'nvie/vim-flake8'
 " To do 
 Plug 'aserebryakov/vim-todo-lists'
+" Supercollider?
+Plug 'sbl/scvim'
 call plug#end()
 
 " Theme
