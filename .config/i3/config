@@ -208,6 +208,7 @@ for_window [class="Transmission-gtk"] move container to workspace torrents
 
 # Floating Teams Notification
 for_window [title="Microsoft Teams Notification"] floating enable 
+for_window [class="Pavucontrol"] floating enable
 
 # Run on startup
 exec --no-startup-id compton
