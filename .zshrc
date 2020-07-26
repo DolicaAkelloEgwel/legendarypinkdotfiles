@@ -127,5 +127,3 @@ alias wdu='wajig dailyupgrade'
 
 SPACESHIP_PROMPT_ADD_NEWLINE=false
 SPACESHIP_CHAR_PREFIX="%F{blue}[%F{magenta}$USER%F{red}@%F{green}$HOST%F{blue}] "
-
-export PATH=/home/dolica/scripts:$PATH
