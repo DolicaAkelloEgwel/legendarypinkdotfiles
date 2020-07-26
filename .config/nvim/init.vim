@@ -42,7 +42,7 @@ Plug 'nvie/vim-flake8'
 " To do 
 Plug 'aserebryakov/vim-todo-lists'
 " Supercollider?
-Plug 'sbl/scvim'
+Plug 'davidgranstrom/scnvim'
 call plug#end()
 
 " Theme
