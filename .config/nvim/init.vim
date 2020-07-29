@@ -43,6 +43,8 @@ Plug 'nvie/vim-flake8'
 Plug 'aserebryakov/vim-todo-lists'
 " Supercollider?
 Plug 'davidgranstrom/scnvim'
+" Markdown
+Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 call plug#end()
 
 " Theme

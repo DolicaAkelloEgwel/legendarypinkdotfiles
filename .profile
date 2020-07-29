@@ -30,3 +30,5 @@ export VISUAL=nvim;
 export EDITOR=nvim;
 
 export PATH=/home/dolica/scripts:$PATH
+
+export BROWSER=vivaldi;
