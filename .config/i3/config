@@ -206,11 +206,14 @@ for_window [class="brainfm-nativefier-*"] move container to workspace brain.fm
 for_window [class="webmail-nativefier-*"] move container to workspace webmail
 for_window [class="Transmission-gtk"] move container to workspace torrents
 for_window [class="scide"] move container to workspace supercollider
+for_window [class="Firefox"] move container to workspace focusmate
 
-# Floating Teams Notification
+# Floating Stuff
 for_window [title="Microsoft Teams Notification"] floating enable 
 for_window [class="Pavucontrol"] floating enable
 for_window [class="SuperCollider" title="Volume"] floating enable
+for_window [class="nexus-constructor.py"] floating enable 
+for_window [class="Cheese"] floating enable 
 
 # Run on startup
 exec --no-startup-id compton
@@ -219,6 +222,7 @@ exec --no-startup-id blueman-manager
 exec --no-startup-id workstuff
 exec --no-startup-id bluemail
 exec --no-startup-id randwall
+exec --no-startup-id i3-msg 'workspace music; exec alacritty; exec alacritty; exec alacritty'
 
 # Gaps
 gaps outer 1
@@ -233,9 +237,6 @@ for_window [class="MuPDF"] border pixel 0
 for_window [class="Zathura-swallow"] border pixel 2
 for_window [class="Vivaldi-stable"] border pixel 0
 for_window [class="Slack"] border pixel 2 
-
-# Make the Nexus Constructor float automatically
-for_window [class="nexus-constructor.py"] floating enable 
 
 # Window switcher binding
 bindsym $mod+s exec rofi -theme lb -font "JetBrains Mono 10" -show window

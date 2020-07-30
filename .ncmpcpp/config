@@ -46,7 +46,8 @@ visualizer_sync_interval = "12"
 #visualizer_type = "wave" (spectrum/wave)
 visualizer_type = "spectrum" (spectrum/wave)
 visualizer_in_stereo = "yes"
-visualizer_look = "+⋮"
+visualizer_look = "+┋"
+# visualizer_look = "+┃"
 
 
 ## Navigation ##
