@@ -214,6 +214,7 @@ for_window [class="Pavucontrol"] floating enable
 for_window [class="SuperCollider" title="Volume"] floating enable
 for_window [class="nexus-constructor.py"] floating enable 
 for_window [class="Cheese"] floating enable 
+for_window [class="Xfce4-dict"] floating enable
 
 # Run on startup
 exec --no-startup-id compton
