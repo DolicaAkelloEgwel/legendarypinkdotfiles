@@ -206,7 +206,7 @@ for_window [class="brainfm-nativefier-*"] move container to workspace brain.fm
 for_window [class="webmail-nativefier-*"] move container to workspace webmail
 for_window [class="Transmission-gtk"] move container to workspace torrents
 for_window [class="scide"] move container to workspace supercollider
-for_window [class="Firefox"] move container to workspace focusmate
+for_window [class="Google-chrome"] move container to workspace focusmate
 
 # Floating Stuff
 for_window [title="Microsoft Teams Notification"] floating enable 
