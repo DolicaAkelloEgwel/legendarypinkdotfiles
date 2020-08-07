@@ -207,6 +207,7 @@ for_window [class="webmail-nativefier-*"] move container to workspace webmail
 for_window [class="Transmission-gtk"] move container to workspace torrents
 for_window [class="scide"] move container to workspace supercollider
 for_window [class="Google-chrome"] move container to workspace focusmate
+for_window [class="soulseek"] move container to workspace soulseek
 
 # Floating Stuff
 for_window [title="Microsoft Teams Notification"] floating enable 
@@ -218,12 +219,12 @@ for_window [class="Xfce4-dict"] floating enable
 
 # Run on startup
 exec --no-startup-id compton
-exec --no-startup-id volumeicon
 exec --no-startup-id blueman-manager
 exec --no-startup-id workstuff
 exec --no-startup-id bluemail
 exec --no-startup-id randwall
 exec --no-startup-id i3-msg 'workspace music; exec alacritty; exec alacritty; exec alacritty'
+exec --no-startup-id volumeicon
 
 # Gaps
 gaps outer 1
@@ -234,7 +235,7 @@ for_window [class="Alacritty"] border pixel 2
 for_window [class="jetbrains-clion"] border pixel 0
 for_window [class="libreoffice"] border pixel 0
 for_window [class="Chromium"] border pixel 0
-for_window [class="MuPDF"] border pixel 0
+for_window [class="MuPDF"] border pixel 2
 for_window [class="Zathura-swallow"] border pixel 2
 for_window [class="Vivaldi-stable"] border pixel 0
 for_window [class="Slack"] border pixel 2 
