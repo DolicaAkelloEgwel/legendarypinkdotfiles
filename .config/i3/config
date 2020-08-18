@@ -208,7 +208,7 @@ for_window [class="Transmission-gtk"] move container to workspace torrents
 for_window [class="scide"] move container to workspace supercollider
 for_window [class="Google-chrome"] move container to workspace focusmate
 for_window [class="soulseek"] move container to workspace soulseek
-for_window [title="Microlab.mjpg.mjpg - mpv"] move container to workspace 3 
+for_window [title="Microlab.mjpg.mjpg - mpv"] move container to workspace 3
 
 # Floating Stuff
 for_window [title="Microsoft Teams Notification"] floating enable 
