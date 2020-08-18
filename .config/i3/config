@@ -208,10 +208,10 @@ for_window [class="Transmission-gtk"] move container to workspace torrents
 for_window [class="scide"] move container to workspace supercollider
 for_window [class="Google-chrome"] move container to workspace focusmate
 for_window [class="soulseek"] move container to workspace soulseek
+for_window [title="Microlab.mjpg.mjpg - mpv"] move container to workspace 3 
 
 # Floating Stuff
 for_window [title="Microsoft Teams Notification"] floating enable 
-for_window [title="Microlab.mjpg.mjpg - mpv"] floating enable
 for_window [class="Pavucontrol"] floating enable
 for_window [class="SuperCollider" title="Volume"] floating enable
 for_window [class="nexus-constructor.py"] floating enable 
@@ -224,8 +224,9 @@ exec --no-startup-id blueman-manager
 exec --no-startup-id workstuff
 exec --no-startup-id bluemail
 exec --no-startup-id randwall
-exec --no-startup-id i3-msg 'workspace music; exec alacritty; exec alacritty; exec alacritty'
 exec --no-startup-id volumeicon
+exec --no-startup-id i3-msg 'workspace music; exec alacritty; exec alacritty; exec alacritty'
+exec --no-startup-id i3-msg 'workspace 3; append_layout ~/.config/i3/syringe-terminal.json'
 
 # Gaps
 gaps outer 1

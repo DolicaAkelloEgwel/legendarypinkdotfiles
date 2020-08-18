@@ -1,0 +1,47 @@
+// vim:ts=4:sw=4:et
+{
+    "border": "pixel",
+    "current_border_width": 2,
+    "floating": "auto_off",
+    "geometry": {
+       "height": 600,
+       "width": 800,
+       "x": 0,
+       "y": 0
+    },
+    "marks": [],
+    "name": "ogf91484@pc0095:/dls_sw/work/python3/RHEL7-x86_64/hamiltonmicrolab",
+    "percent": 0.660416666666667,
+    "swallows": [
+       {
+        "class": "^Alacritty$",
+        "instance": "^Alacritty$",
+        "title": "^ogf91484\\@pc0095\\:\\/dls_sw\\/work\\/python3\\/RHEL7\\-x86_64\\/hamiltonmicrolab$"
+       }
+    ],
+    "type": "con"
+}
+
+{
+    "border": "normal",
+    "current_border_width": 2,
+    "floating": "user_off",
+    "geometry": {
+       "height": 611,
+       "width": 384,
+       "x": 768,
+       "y": 235
+    },
+    "marks": [],
+    "name": "Microlab.mjpg.mjpg - mpv",
+    "percent": 0.339583333333333,
+    "swallows": [
+       {
+        "class": "^mpv$",
+        "instance": "^gl$",
+        "title": "^Microlab\\.mjpg\\.mjpg\\ \\-\\ mpv$"
+       }
+    ],
+    "type": "con"
+}
+
