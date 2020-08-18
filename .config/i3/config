@@ -221,7 +221,6 @@ for_window [class="Xfce4-dict"] floating enable
 # Run on startup
 exec --no-startup-id compton
 exec --no-startup-id blueman-manager
-exec --no-startup-id bluemail
 exec --no-startup-id randwall
 exec --no-startup-id volumeicon
 exec --no-startup-id workstuff
