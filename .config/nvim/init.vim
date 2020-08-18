@@ -32,6 +32,7 @@ Plug 'HenryNewcomer/vim-theme-papaya'
 Plug 'drewtempelmeyer/palenight.vim'
 Plug 'dracula/dracula-theme'
 Plug 'sainnhe/edge'
+Plug 'dguo/blood-moon', {'rtp': 'applications/vim'}
 " Git
 Plug 'tpope/vim-fugitive'
 " Indent line
@@ -49,13 +50,15 @@ call plug#end()
 
 " Theme
 set termguicolors
-set background=dark
+" set background=dark
 let g:edge_style = 'neon'
 let g:edge_disable_italic_comment = 1
-colorscheme edge
+colorscheme blood-moon
 
 " Indent line character
 let g:indentLine_char = '┊'
 
 " Run Black on Python files when saving
 autocmd BufWritePre *.py execute ':Black'
+
+:hi Normal guibg=NONE ctermbg=NONE
