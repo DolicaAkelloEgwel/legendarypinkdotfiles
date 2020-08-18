@@ -221,12 +221,10 @@ for_window [class="Xfce4-dict"] floating enable
 # Run on startup
 exec --no-startup-id compton
 exec --no-startup-id blueman-manager
-exec --no-startup-id workstuff
 exec --no-startup-id bluemail
 exec --no-startup-id randwall
 exec --no-startup-id volumeicon
-exec --no-startup-id i3-msg 'workspace music; exec alacritty; exec alacritty; exec alacritty'
-exec --no-startup-id i3-msg 'workspace 3; append_layout ~/.config/i3/syringe-terminal.json'
+exec --no-startup-id workstuff
 
 # Gaps
 gaps outer 1
