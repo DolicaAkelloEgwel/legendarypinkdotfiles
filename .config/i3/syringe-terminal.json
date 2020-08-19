@@ -10,13 +10,13 @@
        "y": 0
     },
     "marks": [],
-    "name": "ogf91484@pc0095:/dls_sw/work/python3/RHEL7-x86_64/hamiltonmicrolab",
-    "percent": 0.660416666666667,
+    "name": "work@thot-tactics: ~",
+    "percent": 0.660243055555556,
     "swallows": [
        {
-        "class": "^Alacritty$",
-        "instance": "^Alacritty$",
-        "title": "^ogf91484\\@pc0095\\:\\/dls_sw\\/work\\/python3\\/RHEL7\\-x86_64\\/hamiltonmicrolab$"
+       "class": "^Alacritty$",
+       "instance": "^Alacritty$",
+       "title": "^work\\@thot\\-tactics\\:\\ \\~$"
        }
     ],
     "type": "con"
@@ -34,12 +34,12 @@
     },
     "marks": [],
     "name": "Microlab.mjpg.mjpg - mpv",
-    "percent": 0.339583333333333,
+    "percent": 0.339756944444444,
     "swallows": [
        {
-        "class": "^mpv$",
-        "instance": "^gl$",
-        "title": "^Microlab\\.mjpg\\.mjpg\\ \\-\\ mpv$"
+       "class": "^mpv$",
+       "instance": "^gl$",
+       "title": "^Microlab\\.mjpg\\.mjpg\\ \\-\\ mpv$"
        }
     ],
     "type": "con"
