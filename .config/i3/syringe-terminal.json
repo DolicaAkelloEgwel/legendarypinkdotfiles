@@ -15,8 +15,7 @@
     "swallows": [
        {
        "class": "^Alacritty$",
-       "instance": "^Alacritty$",
-       "title": "^work\\@thot\\-tactics\\:\\ \\~$"
+       "instance": "^Alacritty$"
        }
     ],
     "type": "con"
