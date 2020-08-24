@@ -10,11 +10,13 @@
        "y": 0
     },
     "marks": [],
+    "name": "ncmpcpp-visualiser",
     "percent": 0.5,
     "swallows": [
        {
         "class": "^Alacritty$",
-        "instance": "^Alacritty$"
+        "instance": "^Alacritty$",
+        "title": "^ncmpcpp\\-visualiser$"
        }
     ],
     "type": "con"
@@ -40,11 +42,13 @@
                "y": 0
             },
             "marks": [],
-            "percent": 0.283333333333333,
+            "name": "ncmpcpp-clock",
+            "percent": 0.3,
             "swallows": [
                {
                 "class": "^Alacritty$",
-                "instance": "^Alacritty$"
+                "instance": "^Alacritty$",
+                "title": "^ncmpcpp\\-clock$"
                }
             ],
             "type": "con"
@@ -60,11 +64,13 @@
                "y": 0
             },
             "marks": [],
-            "percent": 0.716666666666667,
+            "name": "ncmpcpp-playlist",
+            "percent": 0.7,
             "swallows": [
                {
                 "class": "^Alacritty$",
-                "instance": "^Alacritty$"
+                "instance": "^Alacritty$",
+                "title": "^ncmpcpp\\-playlist$"
                }
             ],
             "type": "con"
