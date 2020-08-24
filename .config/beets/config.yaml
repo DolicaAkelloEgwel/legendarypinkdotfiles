@@ -1,0 +1,8 @@
+directory: /media/Files/Music
+original_date: yes
+match:
+    preferred:
+        original_year: yes
+paths:
+    default: $albumartist/$year - $album/$track $title
+plugins: fetchart
