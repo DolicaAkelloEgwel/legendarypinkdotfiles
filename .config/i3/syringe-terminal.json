@@ -10,12 +10,13 @@
        "y": 0
     },
     "marks": [],
-    "name": "work@thot-tactics: ~",
+    "name": "diamond-ssh",
     "percent": 0.660243055555556,
     "swallows": [
        {
        "class": "^Alacritty$",
-       "instance": "^Alacritty$"
+       "instance": "^Alacritty$",
+       "title": "^diamond\\-ssh$"
        }
     ],
     "type": "con"

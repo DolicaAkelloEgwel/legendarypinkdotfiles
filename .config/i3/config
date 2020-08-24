@@ -195,7 +195,7 @@ client.focused_inactive #073642 #073642 #eee8d5 #6c71c4
 client.unfocused #073642 #073642 #93a1a1 #586e75
 client.urgent #d33682 #d33682 #fdf6e3 #dc322f
 
-# Moving workspaces
+# Moving workspaces...why doesn't this work???
 # bindsym $mod+Ctrl+Right move workspace to output right
 # bindsym $mod+Ctrl+less move workspace to output left
 
@@ -213,6 +213,7 @@ for_window [class="scide"] move container to workspace supercollider
 for_window [class="Google-chrome"] move container to workspace focusmate
 for_window [class="soulseek"] move container to workspace soulseek
 for_window [title="Microlab.mjpg.mjpg - mpv"] move container to workspace syringe
+for_window [title="diamond-ssh"] move container to workspace syringe
 for_window [title="ncmpcpp-*"] move container to workspace music
 
 # Floating Stuff
