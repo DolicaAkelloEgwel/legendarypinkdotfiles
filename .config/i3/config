@@ -214,7 +214,8 @@ for_window [class="Google-chrome"] move container to workspace focusmate
 for_window [class="soulseek"] move container to workspace soulseek
 for_window [title="Microlab.mjpg.mjpg - mpv"] move container to workspace syringe
 for_window [title="diamond-ssh"] move container to workspace syringe
-for_window [title="ncmpcpp-*"] move container to workspace music
+for_window [title="^(ncmpcpp-(clock|visualiser|playlist))$"] move container to workspace music
+for_window [title="(.+)(Visual Studio Code)$"] move container to workspace code
 
 # Floating Stuff
 for_window [title="Microsoft Teams Notification"] floating enable 
@@ -223,6 +224,20 @@ for_window [class="SuperCollider" title="Volume"] floating enable
 for_window [class="nexus-constructor.py"] floating enable 
 for_window [class="Cheese"] floating enable 
 for_window [class="Xfce4-dict"] floating enable
+
+
+# Moving workspaces to displays
+workspace "focusmate" output DVI-I-1
+workspace "slack" output DVI-I-1
+workspace "teams" output DVI-I-1
+workspace "webmail" output DVI-I-1
+workspace "riot" output DVI-I-1
+workspace "brain.fm" output DVI-I-1
+workspace "scide" output DVI-I-1
+
+workspace "music" output HDMI-0
+workspace "syringe" output HDMI-0
+workspace "zoom" output HDMI-0
 
 # Run on startup
 exec --no-startup-id compton
@@ -233,7 +248,7 @@ exec --no-startup-id workstuff
 
 # Gaps
 gaps outer 1
-gaps inner 6
+gaps inner 8
 
 # Border pixels
 for_window [class="Alacritty"] border pixel 2
