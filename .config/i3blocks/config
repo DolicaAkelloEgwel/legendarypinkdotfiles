@@ -19,20 +19,17 @@ command=echo "$(iw dev wlo1 link | grep SSID | cut -d " " -f 2-)"
 color=#d33682
 interval=5
 
-
-
-[temp]
-label=
-command=echo "$(sensors coretemp-isa-0000 | awk '/Physical/ {print $4}')"
-interval=10
-color=#b58900
+[ncmpcpp]
+label=🎶
+command=ncmpcpp --current-song="%a - %n - %t (%b)"
+interval=1
+color=#859900
 
 [coronavirus-cases]
 label=😷
 command=rona-new-cases
 interval=3600
 color=#b58900
-
 
 [coronavirus-deaths]
 label=💀
@@ -41,13 +38,13 @@ interval=3600
 color=#6c71c4
 
 [date]
-label=
+label=📆
 command=date '+%A %d·%m·%Y'
 interval=5
 color=#d70a53
 
 [time]
-label=
+label=🕕
 command=date '+%I:%M:%S %p'
 interval=1
 color=#50C878
