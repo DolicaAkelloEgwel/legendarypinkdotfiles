@@ -108,12 +108,11 @@ function changed {
 }
 
 # Git stuff
-alias add='git add -u'
-alias push='git push'
+alias gadd='git add -u'
+alias gpush='git push'
 alias gcm='git checkout master'
-alias diff='git diff . && git diff --cached'
 alias goback="git reset --hard HEAD"
-alias delb="git branch -d"
+alias gdelb="git branch -d"
 
 # # Tidy python files
 alias tidy='black . && flake8'

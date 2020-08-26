@@ -27,13 +27,13 @@ color=#859900
 
 [coronavirus-cases]
 label=😷
-command=rona-new-cases
+command=rona-counter 4
 interval=3600
 color=#b58900
 
 [coronavirus-deaths]
 label=💀
-command=rona-new-deaths
+command=rona-counter 6
 interval=3600
 color=#6c71c4
 
