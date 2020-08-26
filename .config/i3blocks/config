@@ -13,11 +13,11 @@ command=/usr/lib/i3blocks/disk $HOME
 interval=30
 color=#859900
 
-[ssid]
-label=
-command=echo "$(iw dev wlo1 link | grep SSID | cut -d " " -f 2-)"
+[upgrades]
+label=📦
+command=aptitude search '~U' | wc -l
 color=#d33682
-interval=5
+interval=1800
 
 [ncmpcpp]
 label=🎶
