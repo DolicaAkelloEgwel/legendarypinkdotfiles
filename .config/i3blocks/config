@@ -6,7 +6,6 @@ command=/usr/lib/i3blocks/disk /
 interval=30
 color=#1793D1
 
-
 [disk-home]
 label=:
 command=/usr/lib/i3blocks/disk $HOME
@@ -18,12 +17,6 @@ label=🎶
 command=ncmpcpp --current-song="%a - %n - %t (%b)"
 interval=1
 color=#859900
-
-[updates]
-label=📦
-command=aptitude search '~U' | wc -l
-color=#d33682
-interval=1800
 
 [coronavirus-cases]
 label=😷
@@ -37,10 +30,16 @@ command=coronavirus-deaths
 interval=3600
 color=#6c71c4
 
+[updates]
+label=📦
+command=aptitude search '~U' | wc -l
+color=#d33682
+interval=1800
+
 [date]
 label=📆
 command=date '+%A %d·%m·%Y'
-interval=5
+interval=once
 color=#d70a53
 
 [time]
