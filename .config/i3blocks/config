@@ -16,23 +16,16 @@ color=#859900
 label=🎶
 command=ncmpcpp --current-song="%a - %n - %t (%b)"
 interval=1
-color=#859900
-
-[coronavirus-cases]
-label=😷
-command=coronavirus-cases
-interval=3600
 color=#b58900
 
-[coronavirus-deaths]
-label=💀
-command=coronavirus-deaths
+[coronavirus-count]
+command=coronavirus-stats
 interval=3600
 color=#6c71c4
 
 [updates]
 label=📦
-command=aptitude search '~U' | wc -l
+command=count-updates
 color=#d33682
 interval=1800
 
