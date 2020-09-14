@@ -15,8 +15,9 @@ color=#859900
 [ncmpcpp]
 label=🎶
 command=ncmpcpp --current-song="%a - %n - %t (%b)"
-interval=1
+interval=once
 color=#b58900
+signal=2
 
 [coronavirus-count]
 command=coronavirus-stats
@@ -28,16 +29,18 @@ label=📦
 command=count-updates
 color=#d33682
 interval=1800
+signal=1
 
 [date]
 label=📆
 command=date '+%A %d·%m·%Y'
 interval=once
 color=#d70a53
+signal=3
 
 [time]
 label=🕕
 command=date '+%I:%M:%S %p'
-interval=1
 color=#50C878
+interval=1
 
