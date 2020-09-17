@@ -11,7 +11,7 @@
     },
     "marks": [],
     "name": "diamond-ssh",
-    "percent": 0.659722222222223,
+    "percent": 0.658680555555556,
     "swallows": [
        {
        "class": "^Alacritty$",
@@ -34,7 +34,7 @@
     },
     "marks": [],
     "name": "Microlab.mjpg.mjpg - mpv",
-    "percent": 0.340277777777777,
+    "percent": 0.341319444444444,
     "swallows": [
        {
        "class": "^mpv$",

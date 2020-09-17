@@ -13,7 +13,7 @@ set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango:DejaVu Sans Mono 10
+font pango:Inconsolata 10
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -224,6 +224,7 @@ for_window [class="SuperCollider" title="Volume"] floating enable
 for_window [class="nexus-constructor.py"] floating enable 
 for_window [class="Cheese"] floating enable 
 for_window [class="Xfce4-dict"] floating enable
+for_window [class="edm"] floating enable
 
 
 # Moving workspaces to displays

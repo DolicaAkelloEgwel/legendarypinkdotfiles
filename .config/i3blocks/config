@@ -29,14 +29,14 @@ label=📦
 command=count-updates
 color=#d33682
 interval=1800
-signal=1
+signal=3
 
 [date]
 label=📆
 command=date '+%A %d·%m·%Y'
 interval=once
 color=#d70a53
-signal=3
+signal=4
 
 [time]
 label=🕕
