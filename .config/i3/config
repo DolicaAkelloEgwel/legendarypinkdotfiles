@@ -226,8 +226,7 @@ for_window [class="Cheese"] floating enable
 for_window [class="Xfce4-dict"] floating enable
 for_window [class="edm"] floating enable
 
-
-# Moving workspaces to displays
+# Moving workspaces to left display
 workspace "focusmate" output DVI-I-1
 workspace "slack" output DVI-I-1
 workspace "teams" output DVI-I-1
@@ -235,8 +234,9 @@ workspace "webmail" output DVI-I-1
 workspace "riot" output DVI-I-1
 workspace "brain.fm" output DVI-I-1
 workspace "scide" output DVI-I-1
+workspace "music" output DVI-I-1
 
-workspace "music" output HDMI-0
+# Moving workspaces to right display
 workspace "syringe" output HDMI-0
 workspace "zoom" output HDMI-0
 
@@ -246,6 +246,7 @@ exec --no-startup-id blueman-manager
 exec --no-startup-id randwall
 exec --no-startup-id volumeicon
 exec --no-startup-id workstuff
+exec --no-startup-id redshift
 
 # Gaps
 gaps outer 1
