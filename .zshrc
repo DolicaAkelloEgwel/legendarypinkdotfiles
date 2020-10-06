@@ -122,10 +122,10 @@ alias tidy='black . && flake8'
 alias cr='/home/dolica/nexus-constructor/venv/bin/python3.7 -m pytest . -s --ignore=definitions --assert=plain --cov=nexus_constructor --cov-report=html'
 
 # Daily upgrade 
-alias wdu='wajig dailyupgrade; pkill -SIGRTMIN+3 i3blocks'
+alias wdu='wajig dailyupgrade && pkill -SIGRTMIN+3 i3blocks'
 
 SPACESHIP_PROMPT_ADD_NEWLINE=false
 SPACESHIP_CHAR_PREFIX="%F{blue}[%F{magenta}$USER%F{red}@%F{green}$HOST%F{blue}] "
 
 # For fun
-toilet -t thot-tactics | lolcat
+toilet -t -f mono9 -F border $HOST | lolcat
