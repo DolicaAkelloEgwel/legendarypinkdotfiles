@@ -206,19 +206,17 @@ for_window [class="BlueMail"] move container to workspace mail
 for_window [class="Riot"] move container to workspace riot
 for_window [class="zoom"] move container to workspace zoom
 for_window [class="QuiteRss"] move container to workspace rss
-for_window [class="brainfm-nativefier-*"] move container to workspace brain.fm
 for_window [class="webmail-nativefier-*"] move container to workspace webmail
 for_window [class="Transmission-gtk"] move container to workspace torrents
 for_window [class="scide"] move container to workspace supercollider
 for_window [class="Google-chrome"] move container to workspace focusmate
 for_window [class="soulseek"] move container to workspace soulseek
-for_window [title="Microlab.mjpg.mjpg - mpv"] move container to workspace syringe
-for_window [title="diamond-ssh"] move container to workspace syringe
 for_window [title="^(ncmpcpp-(clock|visualiser|playlist))$"] move container to workspace music
 for_window [class="Code"] move container to workspace code
 
 # Floating Stuff
 for_window [title="Microsoft Teams Notification"] floating enable 
+for_window [class="__main__.py"] floating enable # Mantid Imaging
 for_window [class="Pavucontrol"] floating enable
 for_window [class="SuperCollider" title="Volume"] floating enable
 for_window [class="nexus-constructor.py"] floating enable 
@@ -232,12 +230,10 @@ workspace "slack" output DVI-I-1
 workspace "teams" output DVI-I-1
 workspace "webmail" output DVI-I-1
 workspace "riot" output DVI-I-1
-workspace "brain.fm" output DVI-I-1
 workspace "scide" output DVI-I-1
 workspace "music" output DVI-I-1
 
 # Moving workspaces to right display
-workspace "syringe" output HDMI-0
 workspace "zoom" output HDMI-0
 
 # Run on startup
@@ -245,7 +241,6 @@ exec --no-startup-id compton
 exec --no-startup-id blueman-manager
 exec --no-startup-id randwall
 exec --no-startup-id volumeicon
-exec --no-startup-id workstuff
 exec --no-startup-id redshift
 
 # Gaps
