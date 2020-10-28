@@ -219,10 +219,8 @@ for_window [title="Microsoft Teams Notification"] floating enable
 for_window [class="__main__.py"] floating enable # Mantid Imaging
 for_window [class="Pavucontrol"] floating enable
 for_window [class="SuperCollider" title="Volume"] floating enable
-for_window [class="nexus-constructor.py"] floating enable 
 for_window [class="Cheese"] floating enable 
 for_window [class="Xfce4-dict"] floating enable
-for_window [class="edm"] floating enable
 
 # Moving workspaces to left display
 workspace "focusmate" output DVI-I-1
@@ -243,6 +241,7 @@ exec --no-startup-id randwall
 exec --no-startup-id volumeicon
 exec --no-startup-id redshift
 exec --no-startup-id workstuff
+exec --no-startup-id cookieclicker
 
 # Gaps
 gaps outer 1
