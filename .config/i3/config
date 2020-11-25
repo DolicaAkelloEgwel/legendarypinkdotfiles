@@ -209,10 +209,10 @@ for_window [class="QuiteRss"] move container to workspace rss
 for_window [class="webmail-nativefier-*"] move container to workspace webmail
 for_window [class="Transmission-gtk"] move container to workspace torrents
 for_window [class="scide"] move container to workspace supercollider
-for_window [class="Google-chrome"] move container to workspace focusmate
 for_window [class="soulseek"] move container to workspace soulseek
 for_window [title="^(ncmpcpp-(clock|visualiser|playlist))$"] move container to workspace music
 for_window [class="Code"] move container to workspace code
+for_window [class="Todoist"] move container to workspace todo
 
 # Floating Stuff
 for_window [title="Microsoft Teams Notification"] floating enable 
@@ -223,13 +223,13 @@ for_window [class="Cheese"] floating enable
 for_window [class="Xfce4-dict"] floating enable
 
 # Moving workspaces to left display
-workspace "focusmate" output DVI-I-1
 workspace "slack" output DVI-I-1
 workspace "teams" output DVI-I-1
 workspace "webmail" output DVI-I-1
 workspace "riot" output DVI-I-1
 workspace "scide" output DVI-I-1
 workspace "music" output DVI-I-1
+workspace "todo" output DVI-I-1
 
 # Moving workspaces to right display
 workspace "zoom" output HDMI-0
@@ -242,6 +242,7 @@ exec --no-startup-id volumeicon
 exec --no-startup-id redshift
 exec --no-startup-id workstuff
 exec --no-startup-id cookieclicker
+exec --no-startup-id todoist
 
 # Gaps
 gaps outer 0
