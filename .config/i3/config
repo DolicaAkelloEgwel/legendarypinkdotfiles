@@ -216,7 +216,7 @@ for_window [class="Code"] move container to workspace code
 
 # Floating Stuff
 for_window [title="Microsoft Teams Notification"] floating enable 
-for_window [class="__main__.py"] floating enable # Mantid Imaging
+for_window [class="Mantid Imaging"] floating enable
 for_window [class="Pavucontrol"] floating enable
 for_window [class="SuperCollider" title="Volume"] floating enable
 for_window [class="nexus-constructor.py"] floating enable 
@@ -245,8 +245,8 @@ exec --no-startup-id redshift
 exec --no-startup-id workstuff
 
 # Gaps
-gaps outer 1
-gaps inner 8
+gaps outer 0
+gaps inner 2
 
 # Border pixels
 for_window [class="Alacritty"] border pixel 2
