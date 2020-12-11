@@ -121,7 +121,7 @@ alias tidy='black . && flake8'
 # NeXus Constructor coverage report
 alias cr='/home/dolica/nexus-constructor/venv/bin/python3.7 -m pytest . -s --ignore=definitions --assert=plain --cov=nexus_constructor --cov-report=html'
 
-# Daily upgrade 
+# Daily upgrade + update i3blocks
 alias wdu='wajig dailyupgrade && pkill -SIGRTMIN+3 i3blocks'
 
 SPACESHIP_PROMPT_ADD_NEWLINE=false
@@ -129,3 +129,25 @@ SPACESHIP_CHAR_PREFIX="%F{blue}[%F{magenta}$USER%F{red}@%F{green}$HOST%F{blue}] 
 
 # For fun
 toilet -t -f mono9 -F border $HOST | lolcat
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/work/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/work/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/work/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/work/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
+# cloud
+alias dolica-dev='ssh -X ogf91484@172.16.103.193'
+alias no-gpu='ssh -X ogf91484@172.16.113.214'
+
+#
+[ "$USER" = "work" ] && conda activate mantidimaging
