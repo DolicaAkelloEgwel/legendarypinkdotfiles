@@ -62,3 +62,6 @@ let g:indentLine_char = '┊'
 autocmd BufWritePre *.py execute ':Black'
 
 :hi Normal guibg=NONE ctermbg=NONE
+
+autocmd FileType markdown let g:indentLine_enabled=0
+let g:vimwiki_conceallevel=0
