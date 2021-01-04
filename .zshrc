@@ -115,7 +115,7 @@ alias goback="git reset --hard HEAD"
 alias gdelb="git branch -d"
 
 # # Tidy python files
-alias tidy='black . && flake8'
+alias tidy='/home/work/anaconda3/envs/mantidimaging/bin/yapf -i --recursive . && flake8 && mypy --ignore-missing-imports mantidimaging'
 # [ -n "$XTERM_VERSION" ] && transset-df --id "$WINDOWID" >/dev/null
 
 # NeXus Constructor coverage report
