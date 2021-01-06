@@ -25,8 +25,8 @@ autocmd! BufWritePost init.vim source %
 call plug#begin(stdpath('data') . '/plugged')
 " Vim Wiki
 Plug 'vimwiki/vimwiki'
-" Autocomplete
-Plug 'Valloric/YouCompleteMe'
+" VSCode like thing
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " Themez
 Plug 'HenryNewcomer/vim-theme-papaya'
 Plug 'drewtempelmeyer/palenight.vim'
@@ -63,5 +63,9 @@ autocmd BufWritePre *.py execute ':Black'
 
 :hi Normal guibg=NONE ctermbg=NONE
 
+
 autocmd FileType markdown let g:indentLine_enabled=0
 let g:vimwiki_conceallevel=0
+
+" GoTo code navigation.
+nmap <silent> gd <Plug>(coc-definition)
