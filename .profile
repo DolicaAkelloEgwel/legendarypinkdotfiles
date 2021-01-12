@@ -26,9 +26,4 @@ if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
 
-export VISUAL=nvim;
-export EDITOR=nvim;
 
-export PATH=/home/dolica/scripts:/home/dolica/.local/lib/python3.8/site-packages:$PATH
-
-export BROWSER=brave-browser-stable;
