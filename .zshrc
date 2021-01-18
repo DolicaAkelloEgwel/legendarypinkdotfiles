@@ -118,9 +118,6 @@ alias gdelb="git branch -d"
 alias tidy='/home/work/anaconda3/envs/mantidimaging/bin/yapf -i --recursive . && flake8 && mypy --ignore-missing-imports mantidimaging'
 # [ -n "$XTERM_VERSION" ] && transset-df --id "$WINDOWID" >/dev/null
 
-# NeXus Constructor coverage report
-alias cr='/home/dolica/nexus-constructor/venv/bin/python3.7 -m pytest . -s --ignore=definitions --assert=plain --cov=nexus_constructor --cov-report=html'
-
 # Daily upgrade + update i3blocks
 alias wdu='wajig dailyupgrade && pkill -SIGRTMIN+3 i3blocks'
 
@@ -149,5 +146,8 @@ unset __conda_setup
 alias dolica-dev='ssh -X ogf91484@172.16.103.193'
 alias no-gpu='ssh -X ogf91484@172.16.113.214'
 
-#
+# Activate mantidimaging environment
 [ "$USER" = "work" ] && conda activate mantidimaging
+
+# Run mantidimaging
+alias mi='python -m mantidimaging'
