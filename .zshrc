@@ -126,6 +126,7 @@ SPACESHIP_CHAR_PREFIX="%F{blue}[%F{magenta}$USER%F{red}@%F{green}$HOST%F{blue}] 
 
 # For fun
 toilet -t -f mono9 -F border $HOST | lolcat
+fortune | boxes -d parchment
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
