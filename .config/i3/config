@@ -207,6 +207,7 @@ for_window [class="Riot"] move container to workspace riot
 for_window [class="zoom"] move container to workspace zoom
 for_window [class="QuiteRss"] move container to workspace rss
 for_window [class="webmail-nativefier-*"] move container to workspace webmail
+for_window [class="trello-nativefier-*"] move container to workspace trello
 for_window [class="Transmission-gtk"] move container to workspace torrents
 for_window [class="scide"] move container to workspace supercollider
 for_window [class="soulseek"] move container to workspace soulseek
@@ -246,10 +247,12 @@ exec --no-startup-id redshift
 exec --no-startup-id workstuff
 exec --no-startup-id cookieclicker
 exec --no-startup-id todoist
+exec --no-startup-id trello
+exec --no-startup-id discord
 
 # Gaps
 gaps outer 0
-gaps inner 2
+gaps inner 3
 
 # Border pixels
 for_window [class="Alacritty"] border pixel 2
