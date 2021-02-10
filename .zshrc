@@ -111,8 +111,16 @@ function changed {
 alias gadd='git add -u'
 alias gpush='git push'
 alias gcm='git checkout master'
-alias goback="git reset --hard HEAD"
+alias gundo="git reset --hard HEAD"
 alias gdelb="git branch -d"
+alias gprevb="git switch -"
+
+function gupdate {
+    git checkout master
+    git pull
+    gprevb
+    git merge master
+}
 
 # # Tidy python files
 alias tidy='/home/work/anaconda3/envs/mantidimaging/bin/yapf -i --recursive . && flake8 && mypy --ignore-missing-imports mantidimaging'
