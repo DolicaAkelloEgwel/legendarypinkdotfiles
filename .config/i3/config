@@ -224,6 +224,7 @@ for_window [class="Mantid Imaging"] floating enable
 for_window [class="Pavucontrol"] floating enable
 for_window [class="SuperCollider" title="Volume"] floating enable
 for_window [class="Cheese"] floating enable 
+for_window [class="Xmessage"] floating enable
 # for_window [class="Xfce4-dict"] floating enable
 
 # Moving workspaces to left display
