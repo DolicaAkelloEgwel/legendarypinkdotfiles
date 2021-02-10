@@ -115,7 +115,8 @@ alias gundo="git reset --hard HEAD"
 alias gdelb="git branch -d"
 alias gprevb="git switch -"
 
-function gupdate {
+# Update master and merge it into the current branch
+function gupb {
     git checkout master
     git pull
     gprevb
@@ -139,18 +140,20 @@ fortune | boxes -d parchment
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/work/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/home/work/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/home/work/anaconda3/etc/profile.d/conda.sh"
+if [ "$USER" = "work" ]; then
+    __conda_setup="$('/home/work/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+    if [ $? -eq 0 ]; then
+        eval "$__conda_setup"
     else
-        export PATH="/home/work/anaconda3/bin:$PATH"
+        if [ -f "/home/work/anaconda3/etc/profile.d/conda.sh" ]; then
+            . "/home/work/anaconda3/etc/profile.d/conda.sh"
+        else
+            export PATH="/home/work/anaconda3/bin:$PATH"
+        fi
     fi
+    unset __conda_setup
+    # <<< conda initialize <<<
 fi
-unset __conda_setup
-# <<< conda initialize <<<
 
 # cloud
 alias dolica-dev='ssh -X ogf91484@172.16.103.193'
