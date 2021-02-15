@@ -114,6 +114,7 @@ alias gcm='git checkout master'
 alias gundo="git reset --hard HEAD"
 alias gdelb="git branch -d"
 alias gprevb="git switch -"
+alias lg=lazygit
 
 # Update master and merge it into the current branch
 function gupb {
