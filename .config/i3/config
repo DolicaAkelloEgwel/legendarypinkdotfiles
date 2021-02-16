@@ -227,6 +227,8 @@ for_window [class="Cheese"] floating enable
 for_window [class="Xmessage"] floating enable
 for_window [class="Font-manager"] floating enable
 
+for_window [title="Merge Revisions for *"] floating disable
+
 # Moving workspaces to left display
 workspace "slack" output DVI-I-1
 workspace "teams" output DVI-I-1
