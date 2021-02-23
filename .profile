@@ -33,3 +33,7 @@ export PATH=/home/dolica/scripts:/home/dolica/applications:/home/dolica/.local/l
 export PATH=/usr/local/texlive/2020/bin/x86_64-linux:$PATH
 
 export BROWSER=brave-browser-stable;
+
+# Man pages
+export MANPAGER='nvim +Man!'
+export MANWIDTH=999
