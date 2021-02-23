@@ -125,7 +125,8 @@ function gupb {
 }
 
 # # Tidy python files
-alias tidy='yapf -i --recursive . && flake8 && mypy --ignore-missing-imports mantidimaging'
+MI_DIR="/home/work/mantidimaging/mantidimaging"
+alias tidy="yapf -i --recursive $MI_DIR && flake8 && mypy --ignore-missing-imports $MI_DIR"
 # [ -n "$XTERM_VERSION" ] && transset-df --id "$WINDOWID" >/dev/null
 
 # Daily upgrade + update i3blocks
