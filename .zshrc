@@ -125,7 +125,8 @@ function gupb {
 }
 
 # # Tidy python files
-alias tidy='/home/work/anaconda3/envs/mantidimaging/bin/yapf -i --recursive . && flake8 && mypy --ignore-missing-imports mantidimaging'
+MI_DIR="/home/work/mantidimaging/mantidimaging"
+alias tidy="yapf -i --recursive $MI_DIR && flake8 $MI_DIR && mypy --ignore-missing-imports --no-site-packages mantidimaging"
 # [ -n "$XTERM_VERSION" ] && transset-df --id "$WINDOWID" >/dev/null
 
 # Daily upgrade + update i3blocks
@@ -161,7 +162,10 @@ alias dolica-dev='ssh -X ogf91484@172.16.103.193'
 alias no-gpu='ssh -X ogf91484@172.16.113.214'
 
 # Activate mantidimaging environment
-[ "$USER" = "work" ] && conda activate mantidimaging
+[ "$USER" = "work" ] && conda activate mantidimaging-dev
 
 # Run mantidimaging
 alias mi='python -m mantidimaging'
+
+# Batcat
+alias cat=batcat

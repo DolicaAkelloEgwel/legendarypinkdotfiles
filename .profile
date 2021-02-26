@@ -30,5 +30,10 @@ export VISUAL=nvim;
 export EDITOR=nvim;
 
 export PATH=/home/dolica/scripts:/home/dolica/applications:/home/dolica/.local/lib/python3.8/site-packages:$PATH
+export PATH=/usr/local/texlive/2020/bin/x86_64-linux:$PATH
 
 export BROWSER=brave-browser-stable;
+
+# Man pages
+export MANPAGER='nvim +Man!'
+export MANWIDTH=999
