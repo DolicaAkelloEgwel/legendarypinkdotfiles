@@ -252,6 +252,7 @@ exec --no-startup-id cookieclicker
 exec --no-startup-id todoist
 exec --no-startup-id trello
 exec --no-startup-id discord
+exec --no-startup-id dropbox
 
 # Gaps
 gaps outer 0
