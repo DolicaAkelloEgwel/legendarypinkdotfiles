@@ -136,7 +136,9 @@ SPACESHIP_PROMPT_ADD_NEWLINE=false
 SPACESHIP_CHAR_PREFIX="%F{blue}[%F{magenta}$USER%F{red}@%F{green}$HOST%F{blue}] "
 
 # Cool stuff
-toilet -t -f mono9 -F border $HOST | lolcat
+echo ""
+toilet -t -f "3d" $HOST | lolcat
+echo ""
 bm status
 fortune | boxes -d parchment
 
