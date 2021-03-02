@@ -195,9 +195,9 @@ client.focused_inactive #073642 #073642 #eee8d5 #6c71c4
 client.unfocused #073642 #073642 #93a1a1 #586e75
 client.urgent #d33682 #d33682 #fdf6e3 #dc322f
 
-# Moving workspaces...why doesn't this work???
-# bindsym $mod+Ctrl+Right move workspace to output right
-# bindsym $mod+Ctrl+less move workspace to output left
+# Moving workspaces
+bindsym $mod+Control+Right move workspace to output right
+bindsym $mod+Control+Left move workspace to output left
 
 # Workspaces
 for_window [class="Slack"] move container to workspace slack
@@ -217,6 +217,7 @@ for_window [class="Code"] move container to workspace code
 for_window [class="Todoist"] move container to workspace todo
 for_window [class="discord"] move container to workspace discord
 for_window [class="Anki"] move container to workspace anki
+for_window [class="Firefox"] move container to workspace focusmate
 
 # Floating Stuff
 for_window [title="Microsoft Teams Notification"] floating enable 
@@ -227,6 +228,7 @@ for_window [class="Cheese"] floating enable
 for_window [class="Xmessage"] floating enable
 for_window [class="Font-manager"] floating enable
 
+# Not Floating Stuff
 for_window [title="Merge Revisions for *"] floating disable
 
 # Moving workspaces to left display
@@ -243,7 +245,6 @@ workspace "zoom" output HDMI-0
 
 # Run on startup
 exec --no-startup-id compton
-# exec --no-startup-id blueman-manager
 exec --no-startup-id randwall
 exec --no-startup-id volumeicon
 exec --no-startup-id redshift
