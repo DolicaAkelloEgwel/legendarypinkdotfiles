@@ -171,3 +171,6 @@ alias mi='python -m mantidimaging'
 
 # Batcat
 alias cat=batcat
+
+# ghci
+alias haskell=ghci
