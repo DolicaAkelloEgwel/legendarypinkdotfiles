@@ -212,12 +212,13 @@ for_window [class="Transmission-gtk"] move container to workspace torrents
 for_window [class="scide"] move container to workspace supercollider
 for_window [class="soulseek"] move container to workspace soulseek
 for_window [title="^(ncmpcpp-(clock|visualiser|playlist))$"] move container to workspace music
-for_window [title="Shortwave"] move container to workspace webradio
+for_window [title="Shortwave"] move container to workspace music
 for_window [class="Code"] move container to workspace code
 for_window [class="Todoist"] move container to workspace todo
 for_window [class="discord"] move container to workspace discord
 for_window [class="Anki"] move container to workspace anki
 for_window [class="Firefox"] move container to workspace focusmate
+for_window [class="Deadbeef"] move container to workspace music
 
 # Floating Stuff
 for_window [title="Microsoft Teams Notification"] floating enable 
@@ -271,3 +272,5 @@ for_window [class="Slack"] border pixel 2
 
 # Window switcher binding
 bindsym $mod+s exec rofi -theme lb -font "Inconsolata 12" -show window
+
+bindsym $mod+Shift+f exec killall firefox
