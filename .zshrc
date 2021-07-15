@@ -174,4 +174,5 @@ alias gdbmi='gdb -ex r --args python -m mantidimaging'
 # Batcat
 alias cat=batcat
 
-alias gitui="pre-commit && gitui"
+# ghci
+alias haskell=ghci
