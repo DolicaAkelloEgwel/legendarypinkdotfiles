@@ -37,3 +37,7 @@ export BROWSER=brave-browser-stable;
 # Man pages
 export MANPAGER='nvim +Man!'
 export MANWIDTH=999
+
+if [ -f ~/.git-completion.bash ]; then
+  . ~/.git-completion.bash
+fi
