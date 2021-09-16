@@ -207,7 +207,7 @@ for_window [class="Riot"] move container to workspace riot
 for_window [class="zoom"] move container to workspace zoom
 for_window [class="QuiteRss"] move container to workspace rss
 for_window [class="webmail-nativefier-*"] move container to workspace webmail
-for_window [class="trello-nativefier-*"] move container to workspace trello
+for_window [class="Trello"] move container to workspace trello
 for_window [class="Transmission-gtk"] move container to workspace torrents
 for_window [class="scide"] move container to workspace supercollider
 for_window [class="soulseek"] move container to workspace soulseek
@@ -245,13 +245,11 @@ workspace "todo" output DVI-I-1
 workspace "zoom" output HDMI-0
 
 # Run on startup
-exec --no-startup-id compton
+exec --no-startup-id compton --config /dev/null
 exec --no-startup-id randwall
 exec --no-startup-id volumeicon
 exec --no-startup-id redshift
 exec --no-startup-id workstuff
-exec --no-startup-id cookieclicker
-exec --no-startup-id dropbox
 
 # Gaps
 gaps outer 0
