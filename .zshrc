@@ -110,18 +110,18 @@ function changed {
 # Git stuff
 alias gadd='git add -u'
 alias gpush='git push'
-alias gcm='git checkout master'
+alias gcm='git checkout main'
 alias gundo="git reset --hard HEAD"
 alias gdelb="git branch -d"
 alias gprevb="git switch -"
 alias lg=lazygit
 
-# Update master and merge it into the current branch
+# Update main and merge it into the current branch
 function gupb {
-    git checkout master
+    git checkout main
     git pull
     gprevb
-    git merge master
+    git merge main
 }
 
 # # Tidy python files
