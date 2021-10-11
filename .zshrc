@@ -171,6 +171,9 @@ alias idaaas='ssh -l "dolica.akello-egwel@stfc.ac.uk" host-130-246-213-98.nubes.
 alias mi='python -m mantidimaging'
 alias gdbmi='gdb -ex r --args python -m mantidimaging'
 
+# gui tests
+alias guitests='APPLITOOLS_API_KEY=local APPLITOOLS_IMAGE_DIR=~/tmp/gui_test xvfb-run --auto-servernum pytest -p no:xdist -p no:randomly -p no:repeat -p no:cov mantidimaging/eyes_tests/ -vs -rs'
+
 # Batcat
 alias cat=batcat
 
