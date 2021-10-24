@@ -140,6 +140,7 @@ echo ""
 toilet -t -f "3d" $HOST | lolcat
 echo ""
 bm status
+shuf -n 1 /home/dolica/quotes | boxes -d stone
 fortune | boxes -d parchment
 
 # >>> conda initialize >>>
