@@ -110,18 +110,18 @@ function changed {
 # Git stuff
 alias gadd='git add -u'
 alias gpush='git push'
-alias gcm='git checkout master'
+alias gcm='git checkout main'
 alias gundo="git reset --hard HEAD"
 alias gdelb="git branch -d"
 alias gprevb="git switch -"
 alias lg=lazygit
 
-# Update master and merge it into the current branch
+# Update main and merge it into the current branch
 function gupb {
-    git checkout master
+    git checkout main
     git pull
     gprevb
-    git merge master
+    git merge main
 }
 
 # # Tidy python files
@@ -171,6 +171,9 @@ alias idaaas='ssh -l "dolica.akello-egwel@stfc.ac.uk" host-130-246-213-98.nubes.
 # Run mantidimaging
 alias mi='python -m mantidimaging'
 alias gdbmi='gdb -ex r --args python -m mantidimaging'
+
+# gui tests
+alias guitests='APPLITOOLS_API_KEY=local APPLITOOLS_IMAGE_DIR=~/tmp/gui_test xvfb-run --auto-servernum pytest -p no:xdist -p no:randomly -p no:repeat -p no:cov mantidimaging/eyes_tests/ -vs -rs'
 
 # Batcat
 alias cat=batcat
