@@ -129,6 +129,9 @@ MI_DIR="/home/work/mantidimaging/mantidimaging"
 alias tidy="yapf -i --recursive $MI_DIR && flake8 $MI_DIR && mypy --ignore-missing-imports --no-site-packages mantidimaging"
 # [ -n "$XTERM_VERSION" ] && transset-df --id "$WINDOWID" >/dev/null
 
+# coverage
+alias diff-coverage="python -m pytest --cov --cov-report=xml && diff-cover coverage.xml"
+
 # Daily upgrade + update i3blocks
 alias wdu='wajig dailyupgrade && pkill -SIGRTMIN+3 i3blocks'
 
