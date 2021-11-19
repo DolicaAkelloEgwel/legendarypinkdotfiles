@@ -219,6 +219,7 @@ for_window [class="discord"] move container to workspace discord
 for_window [class="Anki"] move container to workspace anki
 for_window [class="Firefox"] move container to workspace focusmate
 for_window [class="Deadbeef"] move container to workspace music
+for_window [class="Pavucontrol"] move container to workspace audio
 
 # Floating Stuff
 for_window [title="Microsoft Teams Notification"] floating enable 
@@ -231,6 +232,7 @@ for_window [class="Font-manager"] floating enable
 
 # Not Floating Stuff
 for_window [title="Merge Revisions for *"] floating disable
+for_window [class="Pavucontrol"] floating disable 
 
 # Moving workspaces to left display
 workspace "slack" output DVI-I-1
@@ -250,6 +252,7 @@ exec --no-startup-id randwall
 exec --no-startup-id volumeicon
 exec --no-startup-id redshift
 exec --no-startup-id safeeyes
+exec --no-startup-id pavucontrol
 exec --no-startup-id workstuff
 
 # Gaps
