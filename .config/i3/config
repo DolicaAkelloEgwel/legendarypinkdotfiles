@@ -249,6 +249,7 @@ exec --no-startup-id compton --config /dev/null
 exec --no-startup-id randwall
 exec --no-startup-id volumeicon
 exec --no-startup-id redshift
+exec --no-startup-id safeeyes
 exec --no-startup-id workstuff
 
 # Gaps
