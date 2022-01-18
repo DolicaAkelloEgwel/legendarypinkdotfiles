@@ -143,9 +143,11 @@ SPACESHIP_CHAR_PREFIX="%F{blue}[%F{magenta}$USER%F{red}@%F{green}$HOST%F{blue}] 
 echo ""
 toilet -t -f "3d" $HOST | lolcat
 echo ""
+fortune | boxes -d scroll
 bm status
 [ "$USER" = "dolica" ] && shuf -n 1 /home/dolica/quotes | boxes -d stone
 fortune | boxes -d parchment
+shuf -n 1 /home/dolica/quotes | boxes -d columns -k true
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
