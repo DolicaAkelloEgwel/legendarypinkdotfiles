@@ -116,6 +116,7 @@ alias gdelb="git branch -d"
 alias gprevb="git switch -"
 alias lg=lazygit
 alias gitui='pre-commit run --all-files && gitui'
+alias gam='git commit --amend'
 
 # Update main and merge it into the current branch
 function gupb {
