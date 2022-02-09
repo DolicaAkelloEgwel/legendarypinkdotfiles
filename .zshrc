@@ -115,6 +115,9 @@ alias gundo="git reset --hard HEAD"
 alias gdelb="git branch -d"
 alias gprevb="git switch -"
 alias lg=lazygit
+alias gitui='pre-commit run --all-files && gitui'
+alias gamend='git commit --amend'
+alias gnb='git checkout -b'
 
 # Update main and merge it into the current branch
 function gupb {
@@ -144,7 +147,7 @@ toilet -t -f "3d" $HOST | lolcat
 echo ""
 fortune | boxes -d scroll
 bm status
-shuf -n 1 /home/dolica/quotes | fold -w 80 -s | boxes -d columns -k true
+[ "$USER" = "dolica" ] && shuf -n 1 /home/dolica/quotes | fold -w 80 -s | boxes -d columns -k true
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
