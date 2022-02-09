@@ -144,7 +144,7 @@ toilet -t -f "3d" $HOST | lolcat
 echo ""
 fortune | boxes -d scroll
 bm status
-shuf -n 1 /home/dolica/quotes | boxes -d columns -k true
+shuf -n 1 /home/dolica/quotes | fold -w 80 -s | boxes -d columns -k true
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
