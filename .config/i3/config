@@ -238,7 +238,6 @@ for_window [title="Merge Revisions for *"] floating disable
 for_window [class="Pavucontrol"] floating disable 
 
 # Moving workspaces to left display
-workspace "slack" output DVI-I-1
 workspace "teams" output DVI-I-1
 workspace "webmail" output DVI-I-1
 workspace "riot" output DVI-I-1
@@ -248,6 +247,7 @@ workspace "todo" output DVI-I-1
 
 # Moving workspaces to right display
 workspace "zoom" output HDMI-0
+workspace "slack" output HDMI-0
 
 # Run on startup
 exec --no-startup-id compton --config /dev/null

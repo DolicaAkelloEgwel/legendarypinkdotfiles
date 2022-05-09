@@ -152,18 +152,21 @@ bm status
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 if [ "$USER" = "work" ]; then
-    __conda_setup="$('/home/work/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+    __conda_setup="$('/home/work/mambaforge/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
     if [ $? -eq 0 ]; then
         eval "$__conda_setup"
     else
-        if [ -f "/home/work/anaconda3/etc/profile.d/conda.sh" ]; then
-            . "/home/work/anaconda3/etc/profile.d/conda.sh"
+        if [ -f "/home/work/mambaforge/etc/profile.d/conda.sh" ]; then
+            . "/home/work/mambaforge/etc/profile.d/conda.sh"
         else
-            export PATH="/home/work/anaconda3/bin:$PATH"
+            export PATH="/home/work/mambaforge/bin:$PATH"
         fi
     fi
     unset __conda_setup
-    # <<< conda initialize <<<
+
+    if [ -f "/home/work/mambaforge/etc/profile.d/mamba.sh" ]; then
+        . "/home/work/mambaforge/etc/profile.d/mamba.sh"
+    fi
 fi
 
 # cloud
@@ -172,7 +175,7 @@ alias no-gpu='ssh -X ogf91484@172.16.113.214'
 alias idaaas='ssh -l "dolica.akello-egwel@stfc.ac.uk" host-130-246-213-98.nubes.stfc.ac.uk'
 
 # Activate mantidimaging environment
-[ "$USER" = "work" ] && conda activate mantidimaging-dev
+[ "$USER" = "work" ] && mamba activate mantidimaging-dev
 
 # Run mantidimaging
 alias mi='python -m mantidimaging'
