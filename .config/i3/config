@@ -249,6 +249,7 @@ workspace "riot" output DP-3
 workspace "scide" output DP-3
 workspace "music" output DP-3
 workspace "todo" output DP-3
+workspace "audio" output DP-3
 
 # Moving workspaces to right display
 workspace "zoom" output DVI-I-1
