@@ -228,6 +228,7 @@ for_window [class="Firefox"] move container to workspace focusmate
 for_window [class="Deadbeef"] move container to workspace music
 for_window [class="Pavucontrol"] move container to workspace audio
 for_window [class="obs"] move container to workspace obs
+for_window [class="obsidian"] move container to workspace obsidian
 
 # Floating Stuff
 for_window [title="Microsoft Teams Notification"] floating enable 
