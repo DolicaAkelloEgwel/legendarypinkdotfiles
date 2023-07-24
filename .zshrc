@@ -169,14 +169,6 @@ if [ "$USER" = "work" ]; then
     fi
 fi
 
-# cloud
-alias dolica-dev='ssh -X ogf91484@172.16.103.193'
-alias no-gpu='ssh -X ogf91484@172.16.113.214'
-alias idaaas='ssh -l "dolica.akello-egwel@stfc.ac.uk" host-130-246-213-98.nubes.stfc.ac.uk'
-
-# Activate mantidimaging environment
-[ "$USER" = "work" ] && mamba activate mantidimaging-dev
-
 # Run mantidimaging
 alias mi='python -m mantidimaging'
 alias gdbmi='gdb -ex r --args python -m mantidimaging'
