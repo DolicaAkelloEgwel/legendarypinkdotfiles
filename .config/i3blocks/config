@@ -12,13 +12,6 @@ command=moonphase
 interval=once
 color=#b58900
 
-[updates]
-label=📦
-command=count-updates
-color=#859900
-interval=1800
-signal=3
-
 [date]
 label=📆
 command=date '+%A %d·%m·%Y'
