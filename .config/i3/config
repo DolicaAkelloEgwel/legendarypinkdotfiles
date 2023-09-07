@@ -68,8 +68,10 @@ bindsym $mod+d exec rofi -theme lb -font "Inconsolata 11" -show drun
 # change focus
 bindsym $mod+j focus left
 bindsym $mod+k focus down
-bindsym $mod+l focus up
 bindsym $mod+semicolon focus right
+
+# lock the screen - I don't use focus change stuff
+bindsym $mod+l exec i3lock-fancy 
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
