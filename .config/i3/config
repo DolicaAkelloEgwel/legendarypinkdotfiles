@@ -10,7 +10,7 @@
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
 # displays
-exec --no-startup-id xrandr --output DP-3 --left-of DVI-I-1
+exec --no-startup-id xrandr --output DP-1 --left-of DP-3
 
 set $mod Mod4
 
