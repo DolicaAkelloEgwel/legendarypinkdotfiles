@@ -127,14 +127,6 @@ function gupb {
     git merge main
 }
 
-# # Tidy python files
-MI_DIR="/home/work/mantidimaging/mantidimaging"
-alias tidy="yapf -i --recursive $MI_DIR && flake8 $MI_DIR && mypy --ignore-missing-imports --no-site-packages mantidimaging"
-# [ -n "$XTERM_VERSION" ] && transset-df --id "$WINDOWID" >/dev/null
-
-# coverage
-alias diff-coverage="python -m pytest --cov --cov-report=xml; diff-cover coverage.xml"
-
 # Daily upgrade + update i3blocks
 alias wdu='wajig dailyupgrade && pkill -SIGRTMIN+3 i3blocks'
 
@@ -143,7 +135,7 @@ SPACESHIP_CHAR_PREFIX="%F{blue}[%F{magenta}$USER%F{red}@%F{green}$HOST%F{blue}] 
 
 # Cool stuff
 echo ""
-toilet -t -f "3d" $HOST | lolcat
+toilet -t -f "Roman" $HOST | lolcat
 echo ""
 fortune | boxes -d scroll
 bm status
@@ -168,13 +160,6 @@ if [ "$USER" = "work" ]; then
         . "/home/work/mambaforge/etc/profile.d/mamba.sh"
     fi
 fi
-
-# Run mantidimaging
-alias mi='python -m mantidimaging'
-alias gdbmi='gdb -ex r --args python -m mantidimaging'
-
-# gui tests
-alias guitests='APPLITOOLS_API_KEY=local APPLITOOLS_IMAGE_DIR=~/tmp/gui_test xvfb-run --auto-servernum pytest -p no:xdist -p no:randomly -p no:repeat -p no:cov mantidimaging/eyes_tests/ -vs -rs'
 
 # Batcat
 alias cat=batcat
