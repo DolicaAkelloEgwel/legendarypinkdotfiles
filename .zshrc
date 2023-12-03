@@ -143,22 +143,20 @@ bm status
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-if [ "$USER" = "work" ]; then
-    __conda_setup="$('/home/work/mambaforge/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
-    if [ $? -eq 0 ]; then
-        eval "$__conda_setup"
+__conda_setup="$('/home/'$USER'/miniforge3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/$USER/miniforge3/etc/profile.d/conda.sh" ]; then
+        . "/home/$USER/miniforge3/etc/profile.d/conda.sh"
     else
-        if [ -f "/home/work/mambaforge/etc/profile.d/conda.sh" ]; then
-            . "/home/work/mambaforge/etc/profile.d/conda.sh"
-        else
-            export PATH="/home/work/mambaforge/bin:$PATH"
-        fi
+        export PATH="/home/$USER/miniforge3/bin:$PATH"
     fi
-    unset __conda_setup
+fi
+unset __conda_setup
 
-    if [ -f "/home/work/mambaforge/etc/profile.d/mamba.sh" ]; then
-        . "/home/work/mambaforge/etc/profile.d/mamba.sh"
-    fi
+if [ -f "/home/$USER/miniforge3/etc/profile.d/mamba.sh" ]; then
+    . "/home/$USER/miniforge3/etc/profile.d/mamba.sh"
 fi
 
 # Batcat
