@@ -206,7 +206,7 @@ bindsym $mod+Control+Left move workspace to output left
 
 # Workspaces
 for_window [class="Slack"] move container to workspace slack
-for_window [class="Microsoft Teams*"] move container to workspace teams
+for_window [class="teams-for-linux"] move container to workspace teams
 for_window [class="Thunderbird"] move container to workspace mail
 for_window [class="Riot"] move container to workspace riot
 for_window [class="zoom"] move container to workspace zoom
@@ -223,7 +223,6 @@ for_window [class="nuclear"] move container to workspace music
 for_window [class="Todoist"] move container to workspace todo
 for_window [class="discord"] move container to workspace discord
 for_window [class="Anki"] move container to workspace anki
-for_window [class="firefox"] move container to workspace focusmate
 for_window [class="Deadbeef"] move container to workspace music
 for_window [class="Pavucontrol"] move container to workspace audio
 for_window [class="obs"] move container to workspace obs
