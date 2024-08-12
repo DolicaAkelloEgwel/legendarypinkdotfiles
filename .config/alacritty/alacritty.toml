@@ -26,9 +26,9 @@ background = "0x10100E"
 foreground = "0xC6C6C4"
 
 [font]
-size = 9
+size = 12
 
 [font.normal]
-family = "Inconsolata"
+family = "Comic Mono"
 style = "Regular"
 
