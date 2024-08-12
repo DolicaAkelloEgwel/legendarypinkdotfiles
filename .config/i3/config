@@ -248,6 +248,8 @@ for_window [class="Cheese"] floating enable
 for_window [class="Xmessage"] floating enable
 for_window [class="Font-manager"] floating enable
 for_window [class="firefox" window_role="alert"] floating enable
+for_window [class="kcalc"] floating enable
+for_window [class="vlc"] floating enable
 
 # Not Floating Stuff
 for_window [title="Merge Revisions for *"] floating disable
