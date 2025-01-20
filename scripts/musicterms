@@ -1,0 +1,2 @@
+#!/bin/bash
+alacritty -t "ncmpcpp-playlist" -e ncmpcpp & alacritty -t "ncmpcpp-clock" -e ncmpcpp -s clock & alacritty -t "ncmpcpp-visualiser" -e cava 

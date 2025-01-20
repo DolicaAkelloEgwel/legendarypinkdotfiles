@@ -1,0 +1,4 @@
+#!/usr/bin/bash
+# Downloads the pronounciation of a word
+curl -o ~/pronounce/"$1".mp3 https://ssl.gstatic.com/dictionary/static/sounds/oxford/"$1"--_gb_1.mp3
+mpv ~/pronounce/"$1".mp3

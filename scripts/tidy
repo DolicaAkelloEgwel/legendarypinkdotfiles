@@ -1,0 +1,6 @@
+#!/bin/bash
+
+black /home/dolica/nexus-constructor/nexus_constructor
+black /home/dolica/nexus-constructor/tests
+flake8 /home/dolica/nexus-constructor/nexus_constructor
+flake8 /home/dolica/nexus-constructor/tests

@@ -1,0 +1,10 @@
+#!/bin/bash
+
+targetdir="${1%%.*}"
+extension="${1##*.}"
+
+mkdir -p "$targetdir"
+
+[ "$extension" = "zip" ] && (unzip $1 -d $targetdir)
+[ "$extension" = "7z" ] && (7z x -o$targetdir $1)
+[ "$extension" = "tar.gz" ] && (tar -xvzf $1 -C $targetdir) && echo "Hello"

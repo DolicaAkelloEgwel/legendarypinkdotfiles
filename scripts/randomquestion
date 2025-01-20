@@ -1,0 +1,3 @@
+#!/bin/bash
+
+swallow zathura -P $((7 + $RANDOM % 291)) /home/dolica/Documents/BookofQuestions.pdf

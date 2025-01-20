@@ -1,0 +1,10 @@
+#!/bin/bash
+
+urlsubstr='youtube'
+for i; do
+    if grep -q "$urlsubstr" <<< "$i"; then
+    mpv "$i"
+else
+    vivaldi-stable "$i"
+fi
+done

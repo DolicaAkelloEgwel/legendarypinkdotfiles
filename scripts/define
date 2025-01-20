@@ -1,0 +1,22 @@
+#!/usr/bin/python3
+import PyDictionary
+import sys
+import pyperclip
+import subprocess
+from termcolor import colored
+
+definitions = PyDictionary.PyDictionary().meaning(sys.argv[1])
+if definitions is None:
+    print("Unable to find definition of word {}".format(sys.argv[1]))
+    exit()
+
+clip = [sys.argv[1]]
+print(colored(sys.argv[1], attrs=['bold']))
+
+for value in definitions.values():
+    for defn in value:
+        clip.append(defn)
+        print(defn)
+
+pyperclip.copy("\n".join(clip))
+subprocess.run("mpv --really-quiet https://ssl.gstatic.com/dictionary/static/sounds/oxford/{}--_gb_1.mp3".format(sys.argv[1]), shell=True)

@@ -1,0 +1,4 @@
+#!/bin/bash
+UPDATES=$(aptitude search '~U' | wc -l)
+((UPDATES)) && echo $UPDATES && exit
+echo "✔"

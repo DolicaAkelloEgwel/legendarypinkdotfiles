@@ -1,0 +1,43 @@
+#!/usr/bin/python3
+from termcolor import colored
+from uk_covid19 import Cov19API
+
+cases_and_deaths = {
+    "date": "date",
+    "newCasesByPublishDate": "newCasesByPublishDate",
+    "cumCasesByPublishDate": "cumCasesByPublishDate",
+    "newDeaths28DaysByPublishDate": "newDeaths28DaysByPublishDate",
+    "cumDeaths28DaysByPublishDate": "cumDeaths28DaysByPublishDate"
+}
+
+uk = [
+    'areaType=overview',
+]
+
+api = Cov19API(filters=uk, structure=cases_and_deaths)
+data = api.get_json()
+
+cases_today = data['data'][0]['newCasesByPublishDate']
+cases_yesterday = data['data'][1]['newCasesByPublishDate']
+
+deaths_today = data['data'][0]['newDeaths28DaysByPublishDate']
+deaths_yesterday = data['data'][1]['newDeaths28DaysByPublishDate']
+
+def create_stats_string(count_today, count_yesterday):
+
+    change = count_today - count_yesterday
+    percent_increase = (change * 1.0 / count_yesterday) * 100
+    percent_increase = round(percent_increase, 2) 
+
+    sign = arrow = ""
+    if change > 0:
+        sign = "+"
+        # arrow = colored("🢁","red")
+        arrow = "🢁"
+    if change < 0:
+        # arrow = colored("🢃","green")
+        arrow = "🢃"
+
+    return f"{count_today} | {sign}{change} {arrow} | {sign}{percent_increase}% {arrow}"
+
+print("😷 " + create_stats_string(cases_today, cases_yesterday) + " || 💀 " + create_stats_string(deaths_today, deaths_yesterday))

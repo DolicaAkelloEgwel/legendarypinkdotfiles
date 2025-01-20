@@ -1,0 +1,2 @@
+#!/bin/bash
+swallow mpv "$1"

@@ -1,0 +1,4 @@
+PyDictionary
+termcolors
+uk_covid19
+pyperclip

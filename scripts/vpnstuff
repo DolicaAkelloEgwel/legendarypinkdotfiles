@@ -1,0 +1,9 @@
+#!/bin/bash
+
+while [ -z "$(ip link show | grep ppp0)" ]
+do
+    sleep 5s
+done
+
+code
+syringestuff
