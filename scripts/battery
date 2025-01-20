@@ -11,4 +11,4 @@ elif battery.percent >= 30:
 else:
     emoji = "🪫"
 
-print(f"{emoji} {int(battery.percent)}")
+print(f"{emoji} {int(battery.percent)}%")
