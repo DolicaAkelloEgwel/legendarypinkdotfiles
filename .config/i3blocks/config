@@ -1,8 +1,8 @@
 separator_block_width=14
 
-[ncmpcpp]
-label=🎶
-command=ncmpcpp --current-song="%a - %n - %t (%b)"
+[updates]
+label=📦
+command=count-updates
 interval=once
 color=#b58900
 signal=2
