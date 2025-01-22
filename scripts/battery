@@ -1,0 +1,14 @@
+import psutil
+
+battery = psutil.sensors_battery()
+if battery is None:
+    exit()
+
+if battery.power_plugged:
+    emoji = "🔌" 
+elif battery.percent >= 30:
+    emoji = "🔋"
+else:
+    emoji = "🪫"
+
+print(f"{emoji} {int(battery.percent)}%")
