@@ -3,7 +3,7 @@ separator_block_width=14
 [updates]
 label=📦
 command=count-updates
-interval=once
+interval=5
 color=#b58900
 signal=2
 
