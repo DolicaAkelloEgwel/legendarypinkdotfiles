@@ -1,4 +1,4 @@
 #!/bin/bash
 
-wall=$(find /home/dolica/.wallpapers -type f | shuf -n 1)
+wall=$(find ~/.wallpapers -type f | shuf -n 1)
 feh --bg-fill $wall $wall
