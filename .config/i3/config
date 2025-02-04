@@ -224,7 +224,9 @@ for_window [class="zoom"] move container to workspace zoom
 for_window [class="QuiteRss"] move container to workspace rss
 for_window [class="webmail-nativefier-*"] move container to workspace webmail
 for_window [instance="crx_jijnmpkkfkjaihbhffejemnpbbglahim"] move container to workspace trello
+for_window [instance="crx_cedlcfcgliebhpclbjmjjchelckpghjb"] move container to workspace trello
 for_window [instance="crx_faolnafnngnfdaknnbpnkhgohbobgegn"] move container to workspace outlook
+for_window [instance="crx_bakidganjjbjihpnhkebieendhopjlbh"] move container to workspace focusmate
 for_window [class="Transmission-gtk"] move container to workspace torrents
 for_window [class="scide"] move container to workspace supercollider
 for_window [class="soulseek"] move container to workspace soulseek
@@ -239,6 +241,7 @@ for_window [class="Deadbeef"] move container to workspace music
 for_window [class="Pavucontrol"] move container to workspace audio
 for_window [class="obs"] move container to workspace obs
 for_window [class="obsidian"] move container to workspace obsidian
+for_window [class="[Ff]erdium"] move container to workspace ferdium
 
 # Floating Stuff
 for_window [title="Microsoft Teams Notification"] floating enable 
@@ -271,14 +274,14 @@ workspace "slack" output DVI-I-1
 
 # Run on startup
 exec --no-startup-id compton --config /dev/null
-exec --no-startup-id randwall
+exec --no-startup-id ~/scripts/randwall
 exec --no-startup-id volumeicon
 exec --no-startup-id redshift
 exec --no-startup-id safeeyes
 exec --no-startup-id pavucontrol
 exec --no-startup-id cantata
 exec --no-startup-id xfce4-power-manager
-exec --no-startup-id workstuff
+exec --no-startup-id ~/scripts/workstuff
 
 # Gaps
 gaps outer 0
