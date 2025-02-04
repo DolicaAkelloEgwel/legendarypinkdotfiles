@@ -1,10 +1,9 @@
 #!/bin/bash
 
-[ "$USER" == "dolica" ] && thunderbird && exit
+[ "$USER" == "dolica" ] && exit
 
 DOW=$(date +%u)
 HOUR=$(date +"%H")
 [[ $HOUR < 19 ]] && (( $DOW < 6 )) && [ "$USER" == "work" ] && WORKTIME=1
 
-((WORKTIME)) && i3-msg 'workspace music; append_layout ~/.config/i3/music.json'
-((WORKTIME)) && (teams & cantanta & nuclear & firefox & webmail & teams-for-linux & 'sudo obs')
+((WORKTIME)) && ('sudo obs')

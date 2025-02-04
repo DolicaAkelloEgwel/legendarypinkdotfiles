@@ -282,6 +282,7 @@ exec --no-startup-id pavucontrol
 exec --no-startup-id cantata
 exec --no-startup-id xfce4-power-manager
 exec --no-startup-id ~/scripts/workstuff
+exec --no-startup-id ferdium
 
 # Gaps
 gaps outer 0
