@@ -29,6 +29,6 @@ foreground = "0xC6C6C4"
 size = 12
 
 [font.normal]
-family = "Comic Mono"
+family = "Space Mono Nerd Font"
 style = "Regular"
 
