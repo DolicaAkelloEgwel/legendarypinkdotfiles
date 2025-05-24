@@ -163,3 +163,8 @@ alias cat=batcat
 
 # ghci
 alias haskell=ghci
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/home/dolica/.lmstudio/bin"
+# End of LM Studio CLI section
+
