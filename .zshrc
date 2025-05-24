@@ -138,7 +138,10 @@ echo ""
 toilet -t -f "Roman" $HOST | lolcat
 echo ""
 fortune | boxes -d scroll
-bm status
+
+if [ "$(hostname)" != "noise-of-the-void" ]; then
+    bm status
+fi
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
