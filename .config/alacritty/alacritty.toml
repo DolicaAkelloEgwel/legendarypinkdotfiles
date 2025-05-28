@@ -26,7 +26,7 @@ background = "0x10100E"
 foreground = "0xC6C6C4"
 
 [font]
-size = 12
+size = 14
 
 [font.normal]
 family = "JetBrainsMono Nerd Font Mono"
