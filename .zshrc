@@ -163,3 +163,7 @@ alias cat=batcat
 
 # ghci
 alias haskell=ghci
+
+export PATH=$PATH:/home/dolica/.spicetify
+
+. "$HOME/.local/share/../bin/env"

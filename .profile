@@ -42,3 +42,5 @@ if [ -f ~/.git-completion.bash ]; then
   . ~/.git-completion.bash
 fi
 . "$HOME/.cargo/env"
+
+. "$HOME/.local/share/../bin/env"
