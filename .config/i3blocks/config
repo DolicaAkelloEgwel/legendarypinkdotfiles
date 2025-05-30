@@ -1,7 +1,7 @@
-separator_block_width=20
+separator_block_width=40
 
 [updates]
-label=
+label= 
 command=count-updates
 interval=5
 color=#00aedb
@@ -13,14 +13,14 @@ interval=once
 color=#a200ff
 
 [date]
-label=
+label= 
 command=date '+%A %d·%m·%Y'
 interval=once
 color=#f47835
 signal=4
 
 [time]
-label=
+label= 
 command=date '+%I:%M:%S %p'
 color=#d41243
 interval=1
