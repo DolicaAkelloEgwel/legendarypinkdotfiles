@@ -12,6 +12,12 @@ command=moonphase
 interval=once
 color=#a200ff
 
+[battery]
+label=
+command=upower -i /org/freedesktop/UPower/devices/battery_BAT0 | grep "percentage" | awk '{print $2}'
+color=#d41243
+interval=30
+
 [date]
 label=
 command=date '+%A %d·%m·%Y'
@@ -21,7 +27,7 @@ signal=4
 
 [time]
 label=
-command=date '+%I:%M:%S %p'
+command=date '+%I:%M:%S %P'
 color=#d41243
 interval=1
 
