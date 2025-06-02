@@ -14,4 +14,4 @@ else
     ICON=${DISCHARGING_ICONS[${VALUE%?}]}
 fi
 
-echo "${ICON}${PERCENTAGE}"
+echo "${ICON} ${PERCENTAGE}"
