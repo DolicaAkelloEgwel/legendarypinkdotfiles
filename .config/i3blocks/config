@@ -1,27 +1,32 @@
-separator_block_width=40
+separator_block_width=30
 
 [updates]
-label= 
+label=
 command=count-updates
 interval=5
-color=#00aedb
+color=#4F51F9
 signal=2
 
 [moon-phase]
 command=moonphase
 interval=once
-color=#a200ff
+color=#CDED16
+
+[battery]
+command=battery
+color=#FF35C8
+interval=5
 
 [date]
-label= 
+label=
 command=date '+%A %d·%m·%Y'
 interval=once
-color=#f47835
+color=#4AFFA2
 signal=4
 
 [time]
-label= 
-command=date '+%I:%M:%S %p'
-color=#d41243
+label=
+command=date +'%r'
+color=#AE24FF
 interval=1
 
