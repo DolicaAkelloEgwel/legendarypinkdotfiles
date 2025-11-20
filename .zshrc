@@ -100,35 +100,10 @@ export EDITOR='nvim'
 
 # Make ranger change directory after it closes
 alias ranger='ranger --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`; cd "$LASTDIR"'
-
-function changed {
-    status=$(git status -s)
-    files=$(cut -f3 -d' ' $status)
-    echo $files
-}
-
-# Git stuff
-alias gadd='git add -u'
-alias gpush='git push'
-alias gcm='git checkout main'
-alias gundo="git reset --hard HEAD"
-alias gdelb="git branch -d"
-alias gprevb="git switch -"
-alias lg=lazygit
-alias gitui='pre-commit run --all-files && gitui'
-alias gamend='git commit --amend'
-alias gnb='git checkout -b'
-
-# Update main and merge it into the current branch
-function gupb {
-    git checkout main
-    git pull
-    gprevb
-    git merge main
-}
-
 # Daily upgrade + update i3blocks
 alias wdu='wajig dailyupgrade && pkill -SIGRTMIN+3 i3blocks'
+# batcat
+alias cat=batcat
 
 SPACESHIP_PROMPT_ADD_NEWLINE=false
 SPACESHIP_CHAR_PREFIX="%F{blue}[%F{magenta}$USER%F{red}@%F{green}$HOST%F{blue}] "
@@ -137,36 +112,22 @@ SPACESHIP_CHAR_PREFIX="%F{blue}[%F{magenta}$USER%F{red}@%F{green}$HOST%F{blue}] 
 echo ""
 toilet -t -f "Roman" $HOST | lolcat
 echo ""
-fortune | boxes -d scroll
 
-if [ "$(hostname)" != "noise-of-the-void" ]; then
+# Not using this anymore, but keeping this so I don't forget
+# /home/dolica/miniforge3/bin/mamba env list | boxes -d scroll
+
+# Beeminder
+if [[ "$(hostname)" != "noise-of-the-void"  &&  "$(hostname)" != "L-B5968" ]]; then
     bm status
 fi
-
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/'$USER'/miniforge3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/home/$USER/miniforge3/etc/profile.d/conda.sh" ]; then
-        . "/home/$USER/miniforge3/etc/profile.d/conda.sh"
-    else
-        export PATH="/home/$USER/miniforge3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-
-if [ -f "/home/$USER/miniforge3/etc/profile.d/mamba.sh" ]; then
-    . "/home/$USER/miniforge3/etc/profile.d/mamba.sh"
-fi
-
-# Batcat
-alias cat=batcat
-
-# ghci
-alias haskell=ghci
 
 export PATH=$PATH:/home/dolica/.spicetify
 
 . "$HOME/.local/share/../bin/env"
+
+export NVM_DIR="$HOME/.config/nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+alias sscov="coverage run -m unittest discover && coverage report && coverage html && librewolf htmlcov/index.html"
+
