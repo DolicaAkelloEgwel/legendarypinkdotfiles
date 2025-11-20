@@ -29,7 +29,7 @@ fi
 export VISUAL=nvim;
 export EDITOR=nvim;
 
-export PATH=/home/dolica/scripts:/home/dolica/applications:/home/dolica/.local/lib/python3.8/site-packages:$PATH
+export PATH=/home/dolica/scripts:/home/dolica/applications:$PATH
 export PATH=/usr/local/texlive/2025/bin/x86_64-linux:$PATH
 
 export BROWSER=librewolf;
