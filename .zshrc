@@ -72,6 +72,10 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
+if [[ -r "$HOME/.profile" ]]; then
+    source "$HOME/.profile"
+fi
+
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
