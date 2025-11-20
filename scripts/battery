@@ -1,14 +1,17 @@
-import psutil
+#!/bin/bash
 
-battery = psutil.sensors_battery()
-if battery is None:
-    exit()
+PERCENTAGE="$(upower -i /org/freedesktop/UPower/devices/battery_BAT0 | grep 'percentage' | awk '{print $2}')"
+STATE="$(upower -i /org/freedesktop/UPower/devices/battery_BAT0 | grep 'state' | awk '{print $2}')"
 
-if battery.power_plugged:
-    emoji = "🔌" 
-elif battery.percent >= 30:
-    emoji = "🔋"
-else:
-    emoji = "🪫"
+VALUE=${PERCENTAGE%?}
 
-print(f"{emoji} {int(battery.percent)}%")
+CHARGING_ICONS=("󰢟" "󰢜" "󰂆" "󰂇" "󰂈" "󰢝" "󰂉" "󰢞" "󰂊" "󰂋" "󰂅") 
+DISCHARGING_ICONS=("󱃍" "󰁺" "󰁻" "󰁼" "󰁽" "󰁾" "󰁿" "󰂀" "󰂁" "󰂂" "󰁹") 
+
+if [ "$STATE" = "charging" ] || [ "$STATE" = "pending-charge" ]; then
+    ICON=${CHARGING_ICONS[${VALUE%?}]}
+else
+    ICON=${DISCHARGING_ICONS[${VALUE%?}]}
+fi
+
+echo "${ICON} ${PERCENTAGE}"

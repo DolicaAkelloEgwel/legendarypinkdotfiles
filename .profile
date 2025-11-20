@@ -29,8 +29,8 @@ fi
 export VISUAL=nvim;
 export EDITOR=nvim;
 
-export PATH=/home/dolica/scripts:/home/dolica/applications:/home/dolica/.local/lib/python3.8/site-packages:$PATH
-export PATH=/usr/local/texlive/2020/bin/x86_64-linux:$PATH
+export PATH=/home/$USER/scripts:$PATH
+export PATH=/usr/local/texlive/2025/bin/x86_64-linux:$PATH
 
 export BROWSER=librewolf;
 
@@ -41,9 +41,12 @@ export MANWIDTH=999
 if [ -f ~/.git-completion.bash ]; then
   . ~/.git-completion.bash
 fi
+
 . "$HOME/.cargo/env"
 
 # Added by LM Studio CLI (lms)
 export PATH="$PATH:/home/dolica/.lmstudio/bin"
 # End of LM Studio CLI section
+
+. "$HOME/.local/share/../bin/env"
 
