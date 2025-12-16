@@ -243,6 +243,7 @@ for_window [class="Pavucontrol"] move container to workspace audio
 for_window [class="obs"] move container to workspace obs
 for_window [class="obsidian"] move container to workspace obsidian
 for_window [class="[Ff]erdium"] move container to workspace ferdium
+for_window [class="[Mm]attermost"] move container to workspace mattermost
 
 # Floating Stuff
 for_window [title="Microsoft Teams Notification"] floating enable 

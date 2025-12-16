@@ -1,9 +1,9 @@
 #!/bin/bash
 
-[ "$HOSTNAME" != "heaven-is-real" ] && [ "$USER" == "dolica" ] && exit
+[ "$HOSTNAME" != "L-B5968" ] && [ "$USER" == "dolica" ] && exit
 
 DOW=$(date +%u)
 HOUR=$(date +"%H")
 [[ $HOUR < 19 ]] && (( $DOW < 6 )) && WORKTIME=1
 
-((WORKTIME)) && (slack & teams-for-linux)
+((WORKTIME)) && (slack & teams-for-linux & mattermost-desktop)
