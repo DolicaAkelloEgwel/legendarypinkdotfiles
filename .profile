@@ -41,7 +41,12 @@ export MANWIDTH=999
 if [ -f ~/.git-completion.bash ]; then
   . ~/.git-completion.bash
 fi
+
 . "$HOME/.cargo/env"
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/home/dolica/.lmstudio/bin"
+# End of LM Studio CLI section
 
 . "$HOME/.local/share/../bin/env"
 
