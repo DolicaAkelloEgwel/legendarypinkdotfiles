@@ -10,7 +10,7 @@
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
 # displays
-exec --no-startup-id xrandr --output DP-3 --left-of DP-1
+exec --no-startup-id xrandr --output DP-3 --right-of DP-5 
 
 set $mod Mod4
 
@@ -195,7 +195,7 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 bar {
         position top
-        font pango: CodeNewRoman Nerd Font 16
+        font pango: CodeNewRoman Nerd Font 14
 
         status_command i3blocks
 	colors {
